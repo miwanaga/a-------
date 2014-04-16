@@ -1,0 +1,166 @@
+// ----------------------------------------------------------------------
+// Recorded 2014/04/16 by Silk Performer Recorder v15.0.0.5988
+// ----------------------------------------------------------------------
+// ルール セット "ASP.NET の ViewState"
+//  * ルール "Parse and Replace __VIEWSTATE"
+//  * ルール "Parse and Replace __EVENTVALIDATION"
+// ----------------------------------------------------------------------
+
+@codepage(932)
+
+benchmark SilkPerformerRecorder
+
+use "WebAPI.bdh"
+
+dcluser
+  user
+    VUser
+  transactions
+    TInit           : begin;
+    TMain           : 1;
+
+var
+
+dclrand
+
+dcltrans
+  transaction TInit
+  begin
+    WebSetBrowser(WEB_BROWSER_MSIE10);
+    WebModifyHttpHeader("Accept-Language", "ja-JP");
+    //WebSetUserBehavior(WEB_USERBEHAVIOR_FIRST_TIME);
+    //WebSetDocumentCache(true, WEB_CACHE_CHECK_SESSION);
+  end TInit;
+
+  transaction TMain
+  var
+    hWeb0 : number;
+  begin
+    SetEncoding("UTF-8");
+ 
+    WebPageAddUrl("http://www.google-analytics.com/ga.js");
+    WebPageAddUrl("http://www.google-analytics.com/__utm.gif", UTM_GIF001);
+    WebPageAddUrl("_inc/css/microfocus_default.css");
+    WebPageAddUrl("_inc/css/microfocus_header.css");
+    WebPageAddUrl("_inc/css/microfocus_footer.css");
+    WebPageAddUrl("_inc/css/microfocus_ie6.css");
+    WebPageAddUrl("_inc/css/microfocus_leftnav.css");
+    WebCookieSet(
+      "__utma=248563995.162553840.1397627885.1397627885.1397627885.1; domain=.microfocus.co.jp; path=/; expires=Wed, 16 Apr 201"
+      "4 05:58:12 GMT", "http://www.microfocus.co.jp/images/base/toppanel.png", 2);
+    WebCookieSet("__utmb=248563995.1.10.1397627885; domain=.microfocus.co.jp; path=/; expires=Wed, 16 Apr 2014 05:58:12 GMT", 
+      "http://www.microfocus.co.jp/images/base/toppanel.png", 2);
+    WebCookieSet("__utmc=248563995; domain=.microfocus.co.jp; path=/; expires=Wed, 16 Apr 2014 05:58:12 GMT", 
+      "http://www.microfocus.co.jp/images/base/toppanel.png", 2);
+    WebCookieSet(
+      "__utmz=248563995.1397627885.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); domain=.microfocus.co.jp; path=/; expires"
+      "=Wed, 16 Apr 2014 05:58:12 GMT", "http://www.microfocus.co.jp/images/base/toppanel.png", 2);
+    WebPageAddUrl("images/base/toppanel.png");
+    WebPageAddUrl("images/home/home_mid_zone_ColumnOver-trans.png");
+    WebPageAddUrl("images/base/sub_main_bottom.gif");
+    WebPageAddUrl("images/base/heade.jpg");
+    WebPageAddUrl("images/base/sub_main_top.gif");
+    WebPageAddUrl("images/base/sub_main.gif");
+    WebPageAddUrl("images/home/multiple_container.png");
+    WebPageAddUrl("images/home/home_mid_zone.jpg");
+    WebPageAddUrl("images/base/logo_microfocus_footer.gif");
+    WebPageAddUrl("images/home/slider_arrow.png");
+    WebPageAddUrl("images/home/pagination_circle.png");
+    WebPageAddUrl("images/home/home_mid_zone_ColumnOver-trans01.png");
+    WebPageAddUrl("images/home/home_mid_zone_ColumnOver-trans02.png");
+    // Redirecting http://segment-pixel.invitemedia.com/pixel?pixelID=140555&partnerID=161&clientID=11565&key=segment
+    // -> (redirection) 
+    // http://bid.g.doubleclick.net/xbbe/invitepixel/pixel?pixelID=140555&partnerID=161&clientID=11565&key=segment
+    // Redirecting http://ad.yieldmanager.com/pixel?id=2287657&t=2
+    // -> (redirection) http://ads.yahoo.com/pixel?id=2287657&t=2&_msd=1&rmxbkn=0&_hnam=ad.yieldmanager.com&_cbv=606385181
+    // Redirecting 
+    // http://googleads.g.doubleclick.net/pagead/viewthroughconversion/1029721533/?value=0&label=mOaJCI_CrAQQvZuB6wM&guid=ON&scr
+    // ipt=0
+    // -> (redirection) http://www.google.com/ads/user-lists/1029721533/?label=mOaJCI_CrAQQvZuB6wM&script=0&random=1396099843
+    // -> (redirection) 
+    // http://www.google.at/ads/user-lists/1029721533/?label=mOaJCI_CrAQQvZuB6wM&script=0&random=1396099843&ipr=y
+    // Redirecting http://insight.adsrvr.org/tags/ak6oj4wh/wxqhdu5r/iframe
+    // -> (redirection) http://d1eoo1tco6rr5e.cloudfront.net/ak6oj4wh/wxqhdu5r/iframe
+    // Redirecting http://insight.adsrvr.org/track/evnt/?adv=ak6oj4wh&ct=0:wxqhdu5r&fmt=3
+    // -> (redirection) 
+    // http://loadm.exelator.com/load/?p=204&g=461&buid=7edbbaa3-9bad-40ce-8524-90262219a7b1&j=0&redir=http%3a%2f%2fmatch.adsrvr
+    // .org%2ftrack%2fcmf%2fgeneric%3fttd_pid%3dexelate
+    // -> (redirection) http://load.s3.amazonaws.com/pixel.gif
+    // Redirecting http://ad.yieldmanager.com/pixel?id=2411940&t=2
+    // -> (redirection) http://ads.yahoo.com/pixel?id=2411940&t=2&_msd=1&rmxbkn=0&_hnam=ad.yieldmanager.com&_cbv=2054951457
+    // Redirecting http://ib.adnxs.com/seg?add=872860,850111,850161,850171&t=2
+    // -> (redirection) http://ib.adnxs.com/bounce?%2Fseg%3Fadd%3D872860%2C850111%2C850161%2C850171%26t%3D2
+    // -> (redirection) https://www.facebook.com/fr/u.php?p=391363987594223&m=3962494448084703400 (unresolved)
+    WebPageUrl("http://www.microfocus.co.jp/", "Application Modernization and Management：マイクロフォーカス");
+    WebTcpipConnect(hWeb0, "217.163.21.37", WEB_PORT_HTTP); // Port: 80
+    WebTcpipShutdown(hWeb0);
+    WebTcpipConnect(hWeb0, "217.163.21.36", WEB_PORT_HTTP); // Port: 80
+    WebTcpipShutdown(hWeb0);
+    WebTcpipConnect(hWeb0, "72.251.243.38", WEB_PORT_HTTP); // Port: 80
+    WebTcpipShutdown(hWeb0);
+    WebTcpipConnect(hWeb0, "37.252.170.35", WEB_PORT_HTTP); // Port: 80
+    WebTcpipShutdown(hWeb0);
+ 
+    WebPageAddUrl("http://www.google-analytics.com/__utm.gif", UTM_GIF002);
+    WebCookieSet("__utmb=248563995.2.10.1397627885; domain=.microfocus.co.jp; path=/; expires=Wed, 16 Apr 2014 05:58:40 GMT", 
+      "http://www.microfocus.co.jp/images/bottom_WiderView.gif", 2);
+    WebPageAddUrl("/images/bottom_WiderView.gif");
+    WebCookieSet(
+      "__utma=248563995.162553840.1397627885.1397627885.1397627885.1; domain=.microfocus.co.jp; path=/; expires=Wed, 16 Apr 201"
+      "4 05:58:40 GMT", "http://www.microfocus.co.jp/about/pressrelease/archives/2014/0327.asp");
+    WebCookieSet("__utmb=248563995.1.10.1397627885; domain=.microfocus.co.jp; path=/; expires=Wed, 16 Apr 2014 05:58:40 GMT", 
+      "http://www.microfocus.co.jp/about/pressrelease/archives/2014/0327.asp");
+    WebCookieSet("__utmc=248563995; domain=.microfocus.co.jp; path=/; expires=Wed, 16 Apr 2014 05:58:40 GMT", 
+      "http://www.microfocus.co.jp/about/pressrelease/archives/2014/0327.asp");
+    WebCookieSet(
+      "__utmz=248563995.1397627885.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); domain=.microfocus.co.jp; path=/; expires"
+      "=Wed, 16 Apr 2014 05:58:40 GMT", "http://www.microfocus.co.jp/about/pressrelease/archives/2014/0327.asp");
+    ThinkTime(5.8);
+    WebPageLink(ToEncoding("Silk Test, Silk Performer, Silk Central新バージョンをリリース"), 
+      "マイクロフォーカスについて - プレスリリース - 2014"); // Link 57
+  end TMain;
+
+dclform
+  UTM_GIF001 <ENCODE_URICOMPONENT> :
+    "utmwv"                     := "5.4.9",
+    "utms"                      := "1",
+    "utmn"                      := "674369724",
+    "utmhn"                     := "www.microfocus.co.jp",
+    "utmcs"                     := "utf-8",
+    "utmsr"                     := "1864x951",
+    "utmvp"                     := "1188x646",
+    "utmsc"                     := "24-bit",
+    "utmul"                     := "ja-jp",
+    "utmje"                     := "1",
+    "utmfl"                     := "-",
+    "utmdt"                     := "Application Modernization and Management：マイクロフォーカス",
+    "utmhid"                    := "275294594",
+    "utmr"                      := "-",
+    "utmp"                      := "/",
+    "utmht"                     := "1397627884991",
+    "utmac"                     := "UA-21162055-1",
+    "utmcc"                     := "__utma=248563995.162553840.1397627885.1397627885.1397627885.1;+__utmz=248563995.1397627885."
+                                   "1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none);",
+    "utmu"                      := "q~";
+
+  UTM_GIF002 <ENCODE_URICOMPONENT> :
+    "utmwv"                     := "5.4.9",
+    "utms"                      := "2",
+    "utmn"                      := "1158575611",
+    "utmhn"                     := "www.microfocus.co.jp",
+    "utmcs"                     := "utf-8",
+    "utmsr"                     := "1864x951",
+    "utmvp"                     := "1188x646",
+    "utmsc"                     := "24-bit",
+    "utmul"                     := "ja-jp",
+    "utmje"                     := "1",
+    "utmfl"                     := "-",
+    "utmhid"                    := "126560786",
+    "utmr"                      := "0",
+    "utmp"                      := "/about/pressrelease/archives/2014/0327.asp",
+    "utmht"                     := "1397627911375",
+    "utmac"                     := "UA-21162055-1",
+    "utmcc"                     := "__utma=248563995.162553840.1397627885.1397627885.1397627885.1;+__utmz=248563995.1397627885."
+                                   "1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none);",
+    "utmu"                      := "q~";
+

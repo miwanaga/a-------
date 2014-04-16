@@ -1,0 +1,590 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Performance_Explorer_Workspace>
+  <WorkState_v1_2>
+    <Frames>
+      <MainFrame Title="Silk Performer Performance Explorer - Http Pages/sec - [localhost]"
+                 WindowPlacement="MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPAAAAAAFOAAAAAAPPDAAAAAOPCAAAAA"></MainFrame>
+      <ChildFrames>
+        <Document-0>
+          <ViewFrame-0 DocPathName="DOC5" DocTemplateIndex="0"
+                       DocumentString="MON.Document" IsActiveChildFrame="False"
+                       IsFrameVisible="True"
+                       WindowPlacement="MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPKCBAAAAAJFAAAAAAEFCAAAAACLAAAAAA"></ViewFrame-0>
+        </Document-0>
+        <Document-1>
+          <ViewFrame-0 DocPathName="DOC6" DocTemplateIndex="0"
+                       DocumentString="MON.Document" IsActiveChildFrame="False"
+                       IsFrameVisible="True"
+                       WindowPlacement="MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPKCBAAAAAAAAAAAAAEFCAAAAAJFAAAAAA"></ViewFrame-0>
+        </Document-1>
+        <Document-2>
+          <ViewFrame-0 DocPathName="DOC7" DocTemplateIndex="0"
+                       DocumentString="MON.Document" IsActiveChildFrame="False"
+                       IsFrameVisible="True"
+                       WindowPlacement="MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPAAAAAAAAJFAAAAAAKCBAAAAACLAAAAAA"></ViewFrame-0>
+        </Document-2>
+        <Document-3>
+          <ViewFrame-0 DocPathName="DOC8" DocTemplateIndex="0"
+                       DocumentString="MON.Document" IsActiveChildFrame="False"
+                       IsFrameVisible="True"
+                       WindowPlacement="MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPAAAAAAAAAAAAAAAAKCBAAAAAJFAAAAAA"></ViewFrame-0>
+        </Document-3>
+        <Document-4>
+          <ViewFrame-0 DocPathName="DOC13" DocTemplateIndex="0"
+                       DocumentString="MON.Document" IsActiveChildFrame="True"
+                       IsFrameVisible="True"
+                       WindowPlacement="MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPMPPPPPPPCOPPPPPPKCBAAAAACLAAAAAAEFCAAAAALABAAAAA"></ViewFrame-0>
+        </Document-4>
+        <Document-5>
+          <ViewFrame-0 DocPathName="DOC14" DocTemplateIndex="0"
+                       DocumentString="MON.Document" IsActiveChildFrame="False"
+                       IsFrameVisible="True"
+                       WindowPlacement="MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPAAAAAAAACLAAAAAAKCBAAAAALABAAAAA"></ViewFrame-0>
+        </Document-5>
+      </ChildFrames>
+    </Frames>
+    <General Major="0" Minor="5" NextDocFreeID="15"></General>
+    <RTItems>
+      <Host1>
+        <Measure1 AddInfo=""
+                  Description="アクティブな仮想ユーザーの数。仮想ユーザーがアクティブとみなされるのは、開始済みで、現在、実行中、データベース待ち、スレッド待ち、思考時間のいずれかの状態にある場合です。"
+                  Duration="5" Host="localhost" HostAlias="localhost"
+                  KeyID="PERFMON:\%PERFORMER% Controller(0)\Summary:Active Users@localhost:0?"
+                  Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                  MeasureClass="6" MeasureScale="0"
+                  Path="%PERFORMER%  コントローラ\要約\アクティブ ユーザー"
+                  Unit="" ViewScale="0" WriteToFile="False"></Measure1>
+        <Measure2 AddInfo=""
+                  Description="時間間隔ごとにカウントされた開始トランザクション数。"
+                  Duration="5" Host="localhost" HostAlias="localhost"
+                  KeyID="PERFMON:\%PERFORMER% Controller(0)\Summary:Transaction Rate@localhost:0?"
+                  Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                  MeasureClass="6" MeasureScale="0"
+                  Path="%PERFORMER%  コントローラ\要約\トランザクション レート"
+                  Unit="" ViewScale="0" WriteToFile="False"></Measure2>
+        <Measure3 AddInfo=""
+                  Description="インターネット、データベース、およびミドルウェア API を含む、API エラーの数。API エラーは、深刻度が &quot;エラー&quot; 以上 (&quot;トランザクション終了&quot; または &quot;プロセス終了&quot;) の場合にカウントされます。深刻度が &quot;情報&quot; または &quot;警告&quot; の場合、エラーは無視されます。"
+                  Duration="5" Host="localhost" HostAlias="localhost"
+                  KeyID="PERFMON:\%PERFORMER% Controller(0)\Summary:Error Rate@localhost:0?"
+                  Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                  MeasureClass="6" MeasureScale="0"
+                  Path="%PERFORMER%  コントローラ\要約\エラー レート" Unit=""
+                  ViewScale="0" WriteToFile="False"></Measure3>
+        <Measure4 AddInfo="" Description="平均 Web ページ時間。"
+                  Duration="5" Host="localhost" HostAlias="localhost"
+                  KeyID="PERFMON:\%PERFORMER% Controller(0)\Summary:Page Time@localhost:0?"
+                  Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                  MeasureClass="6" MeasureScale="0"
+                  Path="%PERFORMER%  コントローラ\要約\ページ時間"
+                  Unit="ms" ViewScale="0" WriteToFile="False"></Measure4>
+        <Measure5 AddInfo="" Description="平均トランザクション ビジー時間。"
+                  Duration="5" Host="localhost" HostAlias="localhost"
+                  KeyID="PERFMON:\%PERFORMER% Controller(0)\Summary:Transaction Busy Time@localhost:0?"
+                  Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                  MeasureClass="6" MeasureScale="0"
+                  Path="%PERFORMER%  コントローラ\要約\トランザクション ビジー時間"
+                  Unit="ms" ViewScale="0" WriteToFile="False"></Measure5>
+        <Measure6 AddInfo=""
+                  Description="実行のために DBMS に送信された SQL コマンドの数。"
+                  Duration="5" Host="localhost" HostAlias="localhost"
+                  KeyID="PERFMON:\%PERFORMER% Controller(0)\Database:Sql Statements@localhost:0?"
+                  Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                  MeasureClass="6" MeasureScale="0"
+                  Path="%PERFORMER%  コントローラ\データベース\SQL 文"
+                  Unit="" ViewScale="0" WriteToFile="False"></Measure6>
+        <Measure7 AddInfo="" Description="開いているログイン数。"
+                  Duration="5" Host="localhost" HostAlias="localhost"
+                  KeyID="PERFMON:\%PERFORMER% Controller(0)\Database:Open Logins@localhost:0?"
+                  Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                  MeasureClass="6" MeasureScale="0"
+                  Path="%PERFORMER%  コントローラ\データベース\開いているログイン"
+                  Unit="" ViewScale="0" WriteToFile="False"></Measure7>
+        <Measure8 AddInfo="" Description="開いているカーソル数。"
+                  Duration="5" Host="localhost" HostAlias="localhost"
+                  KeyID="PERFMON:\%PERFORMER% Controller(0)\Database:Open Cursors@localhost:0?"
+                  Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                  MeasureClass="6" MeasureScale="0"
+                  Path="%PERFORMER%  コントローラ\データベース\開いているカーソル"
+                  Unit="" ViewScale="0" WriteToFile="False"></Measure8>
+        <Measure9 AddInfo=""
+                  Description="サーバーに送信されたデータ量 (KB)。これには、ヘッダーおよびボディのコンテンツ情報、TCP/IP 関連のすべてのトラフィック (HTTP、ネイティブな TCP/IP、IIOP、POP3、SMTP、FTP、および LDAP)、および SSL/TLS を介したセキュアなトラフィックが含まれます。SSL/TLS を使用した暗号化、またはその他の API 関連のトラフィック (TUXEDO ATMI、ODBC、および Oracle OCI など) によって発生するデータのオーバーヘッドは含まれません。"
+                  Duration="5" Host="localhost" HostAlias="localhost"
+                  KeyID="PERFMON:\%PERFORMER% Controller(0)\Internet:KBytes Sent@localhost:0?"
+                  Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                  MeasureClass="6" MeasureScale="0"
+                  Path="%PERFORMER%  コントローラ\インターネット\送信データ量 (KB)"
+                  Unit="kbytes" ViewScale="0" WriteToFile="False"></Measure9>
+        <Measure10 AddInfo=""
+                   Description="サーバーから受信したデータ量 (KB)。これには、ヘッダーおよびボディのコンテンツ情報、TCP/IP 関連のトラフィック (HTTP、ネイティブな TCP/IP、IIOP、POP3、SMTP、FTP、および LDAP)、および SSL/TLS を介したセキュアなトラフィックが含まれます。API 関連のトラフィック (TUXEDO ATMI、ODBC、および Oracle OCI など) は含まれません。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Internet:KBytes Received@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\インターネット\受信データ量 (KB)"
+                   Unit="kbytes" ViewScale="0" WriteToFile="False"></Measure10>
+        <Measure11 AddInfo=""
+                   Description="ブラウザレベルの機能によって送信した HTTP リクエストの数、TCP/IP レベルの機能によって送信したデータ パケットの数、または POP3、SMTP、FTP、または LDAP の各関数呼び出しによって送信したコマンドの数。Silk Performer では、LDAP トラフィックもこの測定値に含まれます。これは、送信した LDAP リクエストの数を報告します。IIOP は別のカウンタを使用します。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Internet:Requests@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\インターネット\リクエスト" Unit=""
+                   ViewScale="0" WriteToFile="False"></Measure11>
+        <Measure12 AddInfo=""
+                   Description="送信または実行が正常に行われなかったリクエスト数。IIOP は別のカウンタを使用します。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Internet:Request Failure@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\インターネット\リクエスト エラー"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure12>
+        <Measure13 AddInfo=""
+                   Description="ブラウザレベルの機能によって受信した HTTP レスポンスの数、TCP/IP レベルの機能によって受信したデータ パケットの数、または POP3、SMTP、FTP、または LDAP の各関数呼び出しによって受信したレスポンスの数。IIOP は別のカウンタを使用します。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Internet:Responses@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\インターネット\レスポンス"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure13>
+        <Measure14 AddInfo=""
+                   Description="正常に受信されなかった予期されたレスポンスの数。IIOP は別のカウンタを使用します。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Internet:Response Failure@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\インターネット\レスポンス エラー"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure14>
+        <Measure15 AddInfo=""
+                   Description="ブラウザレベル、TCP/IP レベル、IIOP、SMTP、POP3、FTP、または LDAP の各関数によって確立された、リモート ホストに対する正常な TCP/IP 接続の数。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Internet:Connects@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\インターネット\接続" Unit=""
+                   ViewScale="0" WriteToFile="False"></Measure15>
+        <Measure16 AddInfo=""
+                   Description="無効なホスト名、無効な IP アドレス、無効なポート、利用できないリモート ホスト、ネットワーク関連の問題、または認証の失敗が原因で失敗した TCP/IP 接続の数。このカウンタは、ブラウザレベル、TCP/IP レベル、IIOP、SMTP、POP3、FTP、および LDAP の各関数で使用されます。デフォルトでは、ブラウザレベルの機能は 3 回まで接続を試みます (2 回まで再試行)。試行がすべて失敗した場合のみ、失敗が記録されます。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Internet:Connect Failure@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\インターネット\接続エラー"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure16>
+        <Measure17 AddInfo=""
+                   Description="クライアントがリクエストの再試行を強制された回数。これは、クライアントがリクエストの送信を試行しているときにタイムアウトが発生して、サーバーが持続的な接続 (キープアライブまたは HTTP/1.1 で利用可能) を閉じた場合に発生することがあります。このカウンタは、ブラウザレベルの機能でのみ使用されます。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Internet:Connect Retry@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\インターネット\接続の再試行"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure17>
+        <Measure18 AddInfo=""
+                   Description="同時接続数。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Internet:Concurrent Connections@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\インターネット\同時接続数"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure18>
+        <Measure19 AddInfo=""
+                   Description="Web サーバーのレスポンス (ステータス コード 3xx) によって実行された HTTP リダイレクトの数。この測定値は、ブラウザレベルの機能でのみ増加します。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Web:Http Redirection@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\Web\HTP リダイレクト"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure19>
+        <Measure20 AddInfo="" Description="HTTP 認証数。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Web:Http Authentication@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\Web\HTTP 認証"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure20>
+        <Measure21 AddInfo=""
+                   Description="Web サーバーに届いた HTTP リクエストの数。このカウンタは、ブラウザレベルの機能でのみ増加します。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Web:Http Hits@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\Web\HTTP ヒット数" Unit=""
+                   ViewScale="0" WriteToFile="False"></Measure21>
+        <Measure22 AddInfo="" Description="リクエストされた HTTP ページ数。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Web:Http Page@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\Web\HTTP ページ" Unit=""
+                   ViewScale="0" WriteToFile="False"></Measure22>
+        <Measure23 AddInfo=""
+                   Description="ブラウザレベルの機能によって受信したクッキーの数。HTTP レスポンスは、複数のクッキー ヘッダー行を含んでいることがあり、それらのヘッダー行の各クッキーがカウントされます。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Web:Http Cookie Received@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\Web\受信 HTTP クッキー"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure23>
+        <Measure24 AddInfo=""
+                   Description="ブラウザレベルの機能によって送信されたクッキーの数。HTTP クッキー リクエストのヘッダー行は複数のクッキーを含んでいることがあり、ヘッダー内の各クッキーがカウントされます。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Web:Http Cookie Sent@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\Web\送信 HTTP クッキー"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure24>
+        <Measure25 AddInfo="" Description="失敗した HTTP ヒット数。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Web:Http Hits Failed@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\Web\失敗した HTTP ヒット数"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure25>
+        <Measure26 AddInfo="" Description="HTTP キャッシュ ヒット数。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Web:Http Cache Hits@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\Web\HTTP キャッシュ ヒット数"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure26>
+        <Measure27 AddInfo=""
+                   Description="条件付き HTTP リクエスト数。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Web:Http Cache Hits Cond Reload@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\Web\HTTP キャッシュ ヒット数条件付き再ロード"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure27>
+        <Measure28 AddInfo=""
+                   Description="HTTP ステータス コード 1xx のレスポンス数。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Web:Http Status Code 1xx@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\Web\HTTP ステータス コード 1xx"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure28>
+        <Measure29 AddInfo=""
+                   Description="HTTP ステータス コード 2xx のレスポンス数。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Web:Http Status Code 2xx@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\Web\HTTP ステータス コード 2xx"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure29>
+        <Measure30 AddInfo=""
+                   Description="HTTP ステータス コード 3xx のレスポンス数。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Web:Http Status Code 3xx@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\Web\HTTP ステータス コード 3xx"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure30>
+        <Measure31 AddInfo=""
+                   Description="HTTP ステータス コード 4xx のレスポンス数。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Web:Http Status Code 4xx@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\Web\HTTP ステータス コード 4xx"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure31>
+        <Measure32 AddInfo=""
+                   Description="HTTP ステータス コード 5xx のレスポンス数。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Web:Http Status Code 5xx@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\Web\HTTP ステータス コード 5xx"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure32>
+        <Measure33 AddInfo=""
+                   Description="クライアントがリクエストの再試行を強制された回数。これは、クライアントがリクエストの送信を試行しているときにタイムアウトが発生して、サーバーが持続的な接続 (キープアライブまたは HTTP/1.1 で利用可能) を閉じた場合に発生することがあります。このカウンタは、ブラウザレベルの機能でのみ使用されます。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Web:Http Request Retry@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\Web\HTTP リクエストの再試行"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure33>
+        <Measure34 AddInfo=""
+                   Description="Silk Performer によって送信された IIOP メッセージの数。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Iiop:Messages@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\IIOP\メッセージ" Unit=""
+                   ViewScale="0" WriteToFile="False"></Measure34>
+        <Measure35 AddInfo=""
+                   Description="Silk Performer によって送信された IIOP リクエスト メッセージの数。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Iiop:Out Request@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\IIOP\送信リクエスト" Unit=""
+                   ViewScale="0" WriteToFile="False"></Measure35>
+        <Measure36 AddInfo=""
+                   Description="Silk Performer によって送信された IIOP ロケート リクエスト メッセージの数。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Iiop:Out LocationRequest@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\IIOP\送信 LocationRequest"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure36>
+        <Measure37 AddInfo=""
+                   Description="Silk Performer によって送信されたフラグメント化した IIOP メッセージの数。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Iiop:Out Fragments@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\IIOP\送信フラグメント"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure37>
+        <Measure38 AddInfo=""
+                   Description="Silk Performer が受信した IIOP レスポンス メッセージ (OK というステータス) の数。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Iiop:In Reply Ok@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\IIOP\受信レスポンス - OK" Unit=""
+                   ViewScale="0" WriteToFile="False"></Measure38>
+        <Measure39 AddInfo=""
+                   Description="Silk Performer が受信した IIOP レスポンス メッセージ (&quot;例外が発生しました&quot; というステータス) の数。この件数には、ユーザー例外およびシステム例外が含まれます。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Iiop:In Reply Except@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\IIOP\受信レスポンス - 例外"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure39>
+        <Measure40 AddInfo=""
+                   Description="&quot;オブジェクトが移動しました&quot; というステータスの IIOP レスポンス メッセージの数。このステータス メッセージによって、Silk Performer は新しい場所へ向けてリクエストを再発行します。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Iiop:In Reply Object Move@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\IIOP\受信レスポンス - オブジェクト移動"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure40>
+        <Measure41 AddInfo=""
+                   Description="保留されたレスポンスを待っている間に、受信データの時間制限 (負荷テスト スクリプトに指定されている) を超過した回数。時間制限を超過した場合、レスポンスが受信されなくなり、Silk Performer は IIOP の &quot;リクエストの取り消し&quot; メッセージを送信して、中止された操作についてサーバーに通知します。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Iiop:In Reply Timed Out@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\IIOP\受信レスポンス - タイムアウト"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure41>
+        <Measure42 AddInfo=""
+                   Description="Silk Performer が受信した IIOP の &quot;ロケート レスポンス&quot; メッセージ (&quot;オブジェクトが存在する&quot; というステータス) の数。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Iiop:In LocationReply Object Here@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\IIOP\受信 LocationReply - オブジェクトあり"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure42>
+        <Measure43 AddInfo=""
+                   Description="Silk Performer が受信した IIOP の &quot;ロケート レスポンス&quot; メッセージ (&quot;オブジェクトが不明である&quot; というステータス) の数。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Iiop:In LocationReply Object Invalid@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\IIOP\受信 LocationReply - オブジェクト無効"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure43>
+        <Measure44 AddInfo=""
+                   Description="Silk Performer が受信した IIOP の &quot;ロケート レスポンス&quot; メッセージ (&quot;オブジェクトが移動しました&quot; というステータス) の数。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Iiop:In LocationReply Object Move@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\IIOP\受信 LocationReply - オブジェクト移動"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure44>
+        <Measure45 AddInfo=""
+                   Description="保留されたロケート レスポンスを待っている間に、受信データの時間制限 (負荷テスト スクリプトに指定されている) を超過した回数。時間制限を超過した場合、ロケート レスポンスが受信されなくなり、Silk Performer は IIOP の &quot;リクエストの取り消し&quot; メッセージを送信して、中止された操作についてサーバーに通知します。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Iiop:In LocationReply Timed Out@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\IIOP\受信 LocationReply - タイム アウト"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure45>
+        <Measure46 AddInfo=""
+                   Description="Silk Performer が受信した IIOP エラー メッセージの数。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Iiop:In Message Error@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\IIOP\受信メッセージ エラー"
+                   Unit="" ViewScale="0" WriteToFile="False"></Measure46>
+        <Measure47 AddInfo=""
+                   Description="Silk Performer が受信したフラグメント化した IIOP メッセージの数。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Iiop:In Fragments@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\IIOP\受信フラグメント" Unit=""
+                   ViewScale="0" WriteToFile="False"></Measure47>
+        <Measure48 AddInfo="" Description="CPU" Duration="5" Host="localhost"
+                   HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Health Control:Cpu@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\健全度管理\CPU"
+                   Unit="%" ViewScale="0" WriteToFile="False"></Measure48>
+        <Measure49 AddInfo="" Description="メモリ" Duration="5" Host="localhost"
+                   HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Health Control:Memory@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\健全度管理\メモリ"
+                   Unit="%" ViewScale="0" WriteToFile="False"></Measure49>
+        <Measure50 AddInfo="" Description="応答性" Duration="5"
+                   Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Health Control:Responsiveness@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\健全度管理\応答性"
+                   Unit="%" ViewScale="0" WriteToFile="False"></Measure50>
+        <Measure51 AddInfo=""
+                   Description="通過した Citrix の同期点。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\Citrix:Synchronization Points@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\Citrix\同期点"
+                   Unit="%" ViewScale="0" WriteToFile="False"></Measure51>
+        <Measure52 AddInfo=""
+                   Description="サーバーに送信された SAP リクエストの数。"
+                   Duration="5" Host="localhost" HostAlias="localhost"
+                   KeyID="PERFMON:\%PERFORMER% Controller(0)\SapGui:Sap Requests@localhost:0?"
+                   Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                   MeasureClass="6" MeasureScale="0"
+                   Path="%PERFORMER%  コントローラ\SAPGUI\SAP リクエスト"
+                   Unit="%" ViewScale="0" WriteToFile="False"></Measure52>           
+      </Host1>
+    </RTItems>
+    <DocumentData>
+      <DOC5 DocTemplateIndex="0" DocumentString="MON.Document">
+        <View0 LegendColumns="125;125;125;60;75;75;60;75;75;75;75;75;75;"
+               SplitterPos="52"></View0>
+        <General Description="" Titel="同時接続数"></General>
+        <Realtime BackColor1="12632256" BackColor2="12632256" ExactValues="True" Interval="3"
+                  IntervalCount="500" LogYAxis="False" Monitoring="True"
+                  TextColor="0" TimeSpan="100"></Realtime>
+        <RealtimeSeries>
+          <Series0 Color="ffff00" LineStyle="Solid" LineWidth="2"
+                   MarkerDisplay="False" NullDisplay="True" Scale="0"
+                   SourceType="Average" Type="Line" Visible="True">
+            <Measure AddInfo=""
+                     Description="同時接続数。"
+                     Duration="5" Host="localhost" HostAlias="localhost"
+                     KeyID="PERFMON:\%PERFORMER% Controller(0)\Internet:Concurrent Connections@localhost:0?"
+                     Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                     MeasureClass="6" MeasureScale="0"
+                     Path="%PERFORMER%  コントローラ\インターネット\同時接続数"
+                     Unit="" ViewScale="0" WriteToFile="False"></Measure>
+          </Series0>
+        </RealtimeSeries>
+      </DOC5>
+      <DOC6 DocTemplateIndex="0" DocumentString="MON.Document">
+        <View0 LegendColumns="125;125;125;60;75;75;60;75;75;75;75;75;75;"
+               SplitterPos="52"></View0>
+        <General Description="" Titel="エラー"></General>
+        <Realtime BackColor1="12632256" BackColor2="12632256" ExactValues="True" Interval="3"
+                  IntervalCount="500" LogYAxis="False" Monitoring="True"
+                  TextColor="0" TimeSpan="100"></Realtime>
+        <RealtimeSeries>
+          <Series0 Color="0000ff" LineStyle="Solid" LineWidth="2"
+                   MarkerDisplay="False" NullDisplay="True" Scale="0"
+                   SourceType="Average" Type="Line" Visible="True">
+            <Measure AddInfo=""
+                     Description="インターネット、データベース、およびミドルウェア API を含む、API エラーの数。API エラーは、深刻度が &quot;エラー&quot; 以上 (&quot;トランザクション終了&quot; または &quot;プロセス終了&quot;) の場合にカウントされます。深刻度が &quot;情報&quot; または &quot;警告&quot; の場合、エラーは無視されます。"
+                     Duration="5" Host="localhost" HostAlias="localhost"
+                     KeyID="PERFMON:\%PERFORMER% Controller(0)\Summary:Error Rate@localhost:0?"
+                     Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                     MeasureClass="6" MeasureScale="0"
+                     Path="%PERFORMER%  コントローラ\要約\エラー レート"
+                     Unit="" ViewScale="0" WriteToFile="False"></Measure>
+          </Series0>
+        </RealtimeSeries>
+      </DOC6>
+      <DOC7 DocTemplateIndex="0" DocumentString="MON.Document">
+        <View0 LegendColumns="125;125;125;60;75;75;60;75;75;75;75;75;75;"
+               SplitterPos="52"></View0>
+        <General Description="" Titel="ヒット数/秒"></General>
+        <Realtime BackColor1="12632256" BackColor2="12632256" ExactValues="True" Interval="3"
+                  IntervalCount="500" LogYAxis="False" Monitoring="True"
+                  TextColor="0" TimeSpan="100"></Realtime>
+        <RealtimeSeries>
+          <Series0 Color="00ff00" LineStyle="Solid" LineWidth="2"
+                   MarkerDisplay="False" NullDisplay="True" Scale="0"
+                   SourceType="Average" Type="Line" Visible="True">
+            <Measure AddInfo=""
+                     Description="Web サーバーに届いた HTTP リクエストの数。このカウンタは、ブラウザレベルの機能でのみ増加します。"
+                     Duration="5" Host="localhost" HostAlias="localhost"
+                     KeyID="PERFMON:\%PERFORMER% Controller(0)\Web:Http Hits@localhost:0?"
+                     Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                     MeasureClass="6" MeasureScale="0"
+                     Path="%PERFORMER%  コントローラ\Web\HTTP ヒット数" Unit=""
+                     ViewScale="0" WriteToFile="False"></Measure>
+          </Series0>
+        </RealtimeSeries>
+      </DOC7>
+      <DOC8 DocTemplateIndex="0" DocumentString="MON.Document">
+        <View0 LegendColumns="125;65;125;60;75;75;60;75;75;75;75;75;75;"
+               SplitterPos="52"></View0>
+        <General Description="" Titel="アクティブ ユーザー"></General>
+        <Realtime BackColor1="12632256" BackColor2="12632256" ExactValues="True" Interval="3"
+                  IntervalCount="500" LogYAxis="False" Monitoring="True"
+                  TextColor="0" TimeSpan="100"></Realtime>
+        <RealtimeSeries>
+          <Series0 Color="ff0000" LineStyle="Solid" LineWidth="2"
+                   MarkerDisplay="False" NullDisplay="True" Scale="0"
+                   SourceType="Average" Type="Line" Visible="True">
+            <Measure AddInfo=""
+                     Description="アクティブな仮想ユーザーの数。仮想ユーザーがアクティブとみなされるのは、開始済みで、現在、実行中、データベース待ち、スレッド待ち、思考時間のいずれかの状態にある場合です。"
+                     Duration="5" Host="localhost" HostAlias="localhost"
+                     KeyID="PERFMON:\%PERFORMER% Controller(0)\Summary:Active Users@localhost:0?"
+                     Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                     MeasureClass="6" MeasureScale="0"
+                     Path="%PERFORMER%  コントローラ\要約\アクティブ ユーザー"
+                     Unit="" ViewScale="0" WriteToFile="False"></Measure>
+          </Series0>
+        </RealtimeSeries>
+      </DOC8>
+      <DOC13 DocTemplateIndex="0" DocumentString="MON.Document">
+        <View0 LegendColumns="125;125;125;60;60;75;75;60;75;75;75;75;75;"
+               SplitterPos="52"></View0>
+        <General Description="" Titel="HTTP ページ/秒"></General>
+        <Realtime BackColor1="12632256" BackColor2="12632256" ExactValues="True" Interval="3"
+                  IntervalCount="500" LogYAxis="False" Monitoring="True"
+                  TextColor="0" TimeSpan="100"></Realtime>
+        <RealtimeSeries>
+          <Series0 Color="ff00ff" LineStyle="Solid" LineWidth="2"
+                   MarkerDisplay="False" NullDisplay="True" Scale="0"
+                   SourceType="Average" Type="Line" Visible="True">
+            <Measure AddInfo=""
+                     Description="リクエストされた HTTP ページ数。"
+                     Duration="5" Host="localhost" HostAlias="localhost"
+                     KeyID="PERFMON:\%PERFORMER% Controller(0)\Web:Http Page@localhost:0?"
+                     Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                     MeasureClass="6" MeasureScale="0"
+                     Path="%PERFORMER%  コントローラ\Web\HTTP ページ" Unit=""
+                     ViewScale="0" WriteToFile="False"></Measure>
+          </Series0>
+        </RealtimeSeries>
+      </DOC13>
+      <DOC14 DocTemplateIndex="0" DocumentString="MON.Document">
+        <View0 LegendColumns="125;125;125;60;60;75;75;60;75;75;75;75;75;"
+               SplitterPos="52"></View0>
+        <General Description="" Titel="HTTP ページ時間"></General>
+        <Realtime BackColor1="12632256" BackColor2="12632256" ExactValues="True" Interval="3"
+                  IntervalCount="500" LogYAxis="False" Monitoring="True"
+                  TextColor="0" TimeSpan="100"></Realtime>
+        <RealtimeSeries>
+          <Series0 Color="808000" LineStyle="Solid" LineWidth="2"
+                   MarkerDisplay="False" NullDisplay="True" Scale="0"
+                   SourceType="Average" Type="Line" Visible="True">
+            <Measure AddInfo="" Description="平均 Web ページ時間。"
+                     Duration="5" Host="localhost" HostAlias="localhost"
+                     KeyID="PERFMON:\%PERFORMER% Controller(0)\Summary:Page Time@localhost:0?"
+                     Level1Max="2" Level1Min="1" Level2Max="4" Level2Min="3"
+                     MeasureClass="6" MeasureScale="0"
+                     Path="%PERFORMER%  コントローラ\要約\ページ時間"
+                     Unit="ms" ViewScale="0" WriteToFile="False"></Measure>
+          </Series0>
+        </RealtimeSeries>
+      </DOC14>
+    </DocumentData>
+  </WorkState_v1_2>
+</Performance_Explorer_Workspace>
