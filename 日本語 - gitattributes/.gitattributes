@@ -1,0 +1,5 @@
+*EUC.txt encoding=euc-jp
+*JIS.txt encoding=jis
+*UTF8*.txt encoding=utf-8
+*UTF16*.txt encoding=utf-16
+*.txt encoding=cp932
